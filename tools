@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Vet Tools | Fran Gómez</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Recommended Tools</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="tools.html">My Tools</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>🧰 Tools I Use as a Veterinary Ophthalmologist & Locum Vet</h2>
+
+
+           <!-- Producto 1 --> 
+    <div style="background: white; border: 1px solid #ddd; border-radius: 8px; padding: 10px; width: 250px; text-align: center;">
+      <h2>Nitecore CU6 Torch</h2>
+      <h3>Colorimetric PLR can help you differenciate SARDS cases. This torch is not specifically designed for this purpose but may be used as such</h3>
+      <a href="https://amzn.to/4kCurZn" target="_blank" rel="nofollow">
+        <img src="https://m.media-amazon.com/images/I/61qDe47G8JL._AC_SX425_.jpg" alt="torch" style="width: 100%; height: auto; border-radius: 4px;">
+        <p style="font-size: 1em; margin: 10px 0;">Potential workaround for colorimetric PLR</p>
+        <button style="background: #FF9900; border: none; padding: 10px 16px; color: white; border-radius: 5px; cursor: pointer;">Ver en Amazon</button>
+      </a>
+    </div>
+
+
+
+    <p><em>All links may be affiliate links – I only recommend what I personally use or recommended by trusted colleagues</em></p>
+  </main>
+
+  <footer>
+    <p>© 2025 Fran Gómez</p>
+  </footer>
+</body>
+</html>
