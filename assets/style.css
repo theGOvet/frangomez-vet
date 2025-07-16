@@ -71,3 +71,39 @@ p {
     padding: 15px;
   }
 }
+
+/* Container for tools */
+.tools-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual tool cards */
+.tool-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Make images scale well */
+.tool-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Optional: better button style */
+.tool-card button {
+  background: #FF9900;
+  border: none;
+  padding: 10px 16px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
