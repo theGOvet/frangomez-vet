@@ -120,3 +120,27 @@ p {
   }
 }
 
+.tool-index {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.tool-index li a {
+  background: #ddd;
+  padding: 6px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 0.95em;
+}
+
+.tool-index li a:hover {
+  background: #bbb;
+}
+
