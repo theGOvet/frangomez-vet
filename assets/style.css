@@ -135,4 +135,12 @@ nav a {
     max-width: none;
     margin-bottom: 20px;
   }
+
+  .tool-index li {
+    margin-bottom: 10px;
+  }
+
+  .tool-index li:last-child {
+    margin-bottom: 0; /* Avoid extra space at the end */
+  }
 }
