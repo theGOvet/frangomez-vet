@@ -17,6 +17,22 @@ header h1 {
   margin: 0 0 5px 0;
 }
 
+main {
+  max-width: 800px;
+  padding: 20px;
+  margin: auto;
+}
+
+/* Typography */
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Navigation */
 nav {
   margin-top: 10px;
 }
@@ -27,7 +43,7 @@ nav a {
   color: #0055aa;
 }
 
-/* Improve nav bar on mobile */
+/* Mobile nav */
 @media (max-width: 600px) {
   nav a {
     display: block;
@@ -40,86 +56,7 @@ nav a {
   }
 }
 
-main {
-  max-width: 800px;
-  padding: 20px;
-  margin: auto;
-}
-
-/* Responsive typography */
-h1, h2, h3 {
-  line-height: 1.2;
-}
-
-p {
-  line-height: 1.6;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-  body {
-    font-size: 16px;
-    padding: 0 10px;
-  }
-
-  nav a {
-    display: block;
-    margin: 8px 0;
-  }
-
-  main {
-    padding: 15px;
-  }
-}
-
-/* Container for tools */
-.tools-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-/* Individual tool cards */
-.tool-card {
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 10px;
-  width: 280px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-/* Make images scale well */
-.tool-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-}
-
-/* Optional: better button style */
-.tool-card button {
-  background: #FF9900;
-  border: none;
-  padding: 10px 16px;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-@media (max-width: 600px) {
-  .tools-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .tool-card {
-    width: 100%;
-    max-width: 360px;
-  }
-}
-
+/* Tool index links */
 .tool-index {
   list-style: none;
   padding: 0;
@@ -144,3 +81,58 @@ p {
   background: #bbb;
 }
 
+/* Tools container and cards */
+.tools-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tool-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.tool-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.tool-card button {
+  background: #FF9900;
+  border: none;
+  padding: 10px 16px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Mobile layout override */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  .tools-container {
+    display: block;
+    padding: 0 10px;
+  }
+
+  .tool-card {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 20px;
+  }
+}
