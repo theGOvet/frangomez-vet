@@ -27,6 +27,19 @@ nav a {
   color: #0055aa;
 }
 
+/* Improve nav bar on mobile */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+    padding: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    text-align: center;
+  }
+}
+
 main {
   max-width: 800px;
   padding: 20px;
