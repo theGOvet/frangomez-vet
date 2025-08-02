@@ -223,11 +223,16 @@
             <a href="cpd.html">CPD</a>
         </div>
     </nav>
+
+
     
     <div class="container">
         <div class="notice">
-            <h3>This page is optimised for both desktop and mobile use</h3>
+                    <h3 id="notice">Loading...</h3>
         </div>
+
+
+
         
         <div class="iframe-container">
             <iframe src="https://thegovet.github.io/antiparasitic-generator/" title="Antiparasitic Generator"></iframe>
@@ -298,6 +303,29 @@
                 </div>
             `;
         }
+
+        // Random Notices
+function loadRandomNotice() {
+  fetch('notices.json')
+    .then(response => response.json())
+    .then(notices => {
+      const noticeElement = document.getElementById('notice');
+      if (notices.length > 0) {
+        const randomIndex = Math.floor(Math.random() * notices.length);
+        noticeElement.textContent = notices[randomIndex];
+      } else {
+        noticeElement.textContent = "No notices available.";
+      }
+    })
+    .catch(error => {
+      console.error('Error loading notices:', error);
+      document.getElementById('notice').textContent = "Failed to load notice.";
+    });
+}
+
+window.addEventListener('DOMContentLoaded', loadRandomNotice);
+
+        
     </script>
 </body>
 </html>
