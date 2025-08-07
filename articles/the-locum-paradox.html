@@ -110,5 +110,21 @@
     <strong>Francisco Gomez</strong> is an Advanced Practitioner in Veterinary Ophthalmology. He locums across the UK and provides mobile referral ophthalmology services in Spain. With over 20 years of clinical experience, he has worked as a vet employee, clinical director for a corporate group, OOH locum, and now as an independent.
   </div>
 
+  <div style="margin-top: 2rem;">
+  <label for="article-link" style="font-weight: bold;">Share this article:</label><br>
+  <input type="text" id="article-link" value="https://frangomezvet.com/articles/the-locum-paradox.html" readonly style="width: 100%; max-width: 500px; padding: 8px; margin-top: 5px; font-size: 0.9rem;">
+  <button onclick="copyLink()" style="margin-top: 10px; padding: 8px 12px; background-color: #007BFF; color: white; border: none; border-radius: 4px; cursor: pointer;">Copy link</button>
+</div>
+
+<script>
+  function copyLink() {
+    const linkInput = document.getElementById("article-link");
+    linkInput.select();
+    linkInput.setSelectionRange(0, 99999); // For mobile
+    navigator.clipboard.writeText(linkInput.value)
+      .then(() => alert("Link copied to clipboard!"))
+      .catch(err => alert("Failed to copy link: " + err));
+  }
+</script>
 </body>
 </html>
